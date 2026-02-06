@@ -5,7 +5,7 @@ This is the personal portfolio website of Edwin Nyamu, a 2nd Year Software Engin
 ## Pages
 
 - **Home**: Introduction with typewriter effect for name
-- **Childhood**: High jump competitions with twin brother and DIY motor project
+- **Childhood**: Nostalgic narrative with split layout for sports and technical memories, featuring twin brother Eric and DIY experiments
 - **Education**: KyU Software Engineering focus on Cybersecurity, Sovereign Funding project
 - **Skills**: Full-stack development, Cybersecurity (Ethical Hacking/AppSec), Novel Writing
 - **Future**: 10-year roadmap to billionaire status through proprietary systems
@@ -33,7 +33,7 @@ Open `index.html` in a modern web browser.
 
 ## Customization
 
-- Replace placeholder images (profile.jpg, childhood1.jpg, etc.) with actual photos
+- Replace placeholder images (edwin-profile.jpg for the hero section, childhood1.jpg, etc.) with actual photos
 - Update contact information if needed
 - Modify colors in :root variables in styles.css
 

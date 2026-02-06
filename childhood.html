@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Childhood - Edwin Nyamu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="childhood-page">
     <header>
         <nav>
             <div class="nav-container">
@@ -24,16 +27,64 @@
         </nav>
     </header>
     <main>
-        <section class="glassmorphism">
-            <h1>My Childhood</h1>
-            <p>Growing up, I had an adventurous spirit that led me to high jump competitions with my twin brother Eric in our backyard. These moments of friendly rivalry sparked my competitive nature and love for physical challenges.</p>
-            <p>My first "DIY motor" project was a turning point—it attracted kids from the neighborhood and ignited my passion for engineering. That spark has driven my journey ever since.</p>
-            <div class="image-grid">
-                <img src="childhood1.jpg" alt="High jump with brother">
-                <img src="childhood2.jpg" alt="DIY motor project">
+        <section class="childhood-hero parallax">
+            <div class="glass-card">
+                <h1>The Foundation: Engineering Since Day One</h1>
+                <p>My formative years laid the groundwork for a lifetime of innovation.</p>
+            </div>
+        </section>
+
+        <section class="arena-section parallax">
+            <div class="glass-card">
+                <h2><i class="fas fa-running"></i> Backyard Olympics</h2>
+                <p>Growing up with my twin brother Eric, we transformed our backyard into a competitive arena. We engineered our own high-jump setups that drew neighborhood crowds, fostering a spirit of innovation and friendly rivalry.</p>
+                <div class="lab-content">
+                    <div class="lab-text">
+                        <p>What started as backyard fun became a demonstration of engineering principles. The high jump wasn't just about jumping higher—it was about designing equipment that was safe, adjustable, and exciting for everyone.</p>
+                        <p>This experience taught me that innovation happens when creativity meets practicality, a lesson I apply to every software solution I build.</p>
+                    </div>
+                    <div class="lab-image">
+                        <img src="high-jump.jpg" alt="High Jump Setup">
+                    </div>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Twin Bond</h3>
+                        <p>Sharing victories and challenges with Eric built unbreakable teamwork.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Community Hub</h3>
+                        <p>Our setups became a gathering place for local kids to compete and learn.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Early Engineering</h3>
+                        <p>Designing and building equipment sparked my passion for creation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lab-section parallax">
+            <div class="glass-card">
+                <h2><i class="fas fa-bolt"></i> The DIY Spark</h2>
+                <p>My fascination with electricity led to creating a circling motor—a backyard invention that captivated onlookers. This was the alpha version of my software engineering career, translating physical logic into digital innovation.</p>
+                <div class="lab-content">
+                    <div class="lab-text">
+                        <p>What started as curiosity became a demonstration of problem-solving. The motor's success wasn't just about the device; it was about understanding systems and iteration.</p>
+                        <p>This experience taught me that engineering is about turning ideas into reality, a principle I carry into every project today.</p>
+                    </div>
+                    <div class="lab-image">
+                        <img src="motor-experiment.jpg" alt="DIY Motor Experiment">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <button class="fab" onclick="window.location.href='index.html'">
+        <i class="fas fa-home"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>

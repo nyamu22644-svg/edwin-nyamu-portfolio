@@ -1,4 +1,4 @@
-// Typewriter effect for name on home page
+// Typewriter effect for name on home page (only if element exists and not on home)
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
@@ -12,7 +12,7 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Initialize typewriter on home page
+// Initialize typewriter on pages that have it (not home)
 document.addEventListener('DOMContentLoaded', function() {
     const typewriterElement = document.getElementById('typewriter');
     if (typewriterElement) {
@@ -24,6 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
     sections.forEach(section => {
         section.classList.add('fade-in');
     });
+});
+
+// Glass nav scroll effect for home page
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('main-header');
+    if (header) {
+        if (window.scrollY > 100) {
+            header.classList.add('solid');
+        } else {
+            header.classList.remove('solid');
+        }
+    }
 });
 
 // Enhanced form validation
@@ -63,16 +75,84 @@ if (form) {
     });
 }
 
-// Smooth scrolling for navigation
+// Smooth scrolling for navigation (only for same-page anchors)
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+        // If href is a page (like index.html), let the browser handle navigation
+    });
+});
+
+// Parallax effect for childhood page
+window.addEventListener('scroll', function() {
+    const parallaxElements = document.querySelectorAll('.parallax');
+    parallaxElements.forEach(element => {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * -0.5;
+        element.style.transform = `translateY(${rate}px)`;
+    });
+});
+
+// FAB scroll to top functionality
+const fab = document.querySelector('.fab');
+if (fab) {
+    fab.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Counter animation for education page
+function animateCounters() {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // The lower the number, the faster the animation
+
+    counters.forEach(counter => {
+        const animate = () => {
+            const value = +counter.getAttribute('data-target');
+            const data = +counter.innerText;
+
+            const time = value / speed;
+            if (data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+            } else {
+                counter.innerText = value;
+            }
+        }
+        animate();
+    });
+}
+
+// Trigger counter animation when mentorship section is in view
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounters();
+            observer.unobserve(entry.target);
         }
     });
+}
+
+// Set up intersection observer for mentorship section
+document.addEventListener('DOMContentLoaded', function() {
+    const mentorshipSection = document.querySelector('.mentorship-section');
+    if (mentorshipSection) {
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5
+        });
+        observer.observe(mentorshipSection);
+    }
 });

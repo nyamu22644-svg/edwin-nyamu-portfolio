@@ -3,36 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edwin Nyamu - Cyber-Tech Portfolio</title>
+    <title>Edwin Nyamu - Architecting Systems | Edgait Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <h1 class="logo">EN</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="childhood.html">Childhood</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="future.html">Future</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+<body class="home-page">
+    <header id="main-header" class="glass-nav">
+        <nav class="nav-container">
+            <div class="logo-section">
+                <h1 class="brand-logo">EDGAIT SOLUTIONS</h1>
+                <span class="tagline">Architecting the Future</span>
             </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="childhood.html">Childhood</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <section id="intro" class="glassmorphism">
-            <h1 id="typewriter">Edwin Nyamu</h1>
-            <p>2nd Year Software Engineering Student at Kirinyaga University (KyU)</p>
-            <p>CEO & Founder of Edgait Solutions</p>
-            <div class="hero-image">
-                <img src="profile.jpg" alt="Edwin Nyamu" class="profile-img">
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">EDWIN NYAMU</h1>
+                <h2 class="hero-subtitle">ARCHITECTING SYSTEMS</h2>
+                <p class="hero-description">Founder & CEO of Edgait Solutions | 2nd Year Software Engineering Student at Kirinyaga University</p>
+                <div class="hero-image">
+                    <img src="edwin-profile.jpg" alt="Edwin Nyamu - Founder & CEO of Edgait Solutions" class="profile-img">
+                </div>
             </div>
         </section>
+
+        <section id="founder-statement" class="statement-section glassmorphism">
+            <div class="statement-content">
+                <h3>Founder's Vision</h3>
+                <blockquote class="founder-quote">
+                    <em>"I founded Edgait Solutions to bridge the critical gap in Kenyan Fintech and Mobile Device Management. Our mission is to empower businesses and individuals with cutting-edge, secure, and innovative technological solutions that drive growth and efficiency in the digital age."</em>
+                </blockquote>
+                <p class="statement-details">As a passionate software engineer and entrepreneur, I combine my academic pursuits with real-world innovation to create systems that matter.</p>
+            </div>
+        </section>
+
+        <section id="ecosystem" class="ecosystem-section">
+            <h3>The Edgait Ecosystem</h3>
+            <div class="ecosystem-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glassmorphism">
+                        <h4>Edgait MDM</h4>
+                        <p>Advanced Mobile Device Management solution built on Headwind MDM, customized for enterprise-level security and control. I specialize in tailoring these systems to meet specific organizational needs, ensuring seamless device management across diverse environments.</p>
+                        <a href="https://edgaitmdm.tech" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Explore Edgait MDM
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glassmorphism">
+                        <h4>Sovereign Funding</h4>
+                        <p>A cutting-edge proprietary trading firm platform hosted on Vercel, designed to provide traders with advanced tools and insights. This fintech solution bridges the gap in accessible trading platforms, offering both educational resources and trading opportunities.</p>
+                        <a href="https://sovereign-funding.vercel.app" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Visit Sovereign Funding
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glassmorphism">
+                        <h4>Kuku Advisor</h4>
+                        <p>An AI-powered poultry management system that optimizes farm operations through intelligent data analysis. This innovative app helps farmers make informed decisions, predict trends, and maximize productivity in poultry farming.</p>
+                        <div class="coming-soon">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-links" class="projects-section glassmorphism">
+            <h3>Project Repositories</h3>
+            <div class="project-grid">
+                <a href="https://github.com/NyamuEd" target="_blank" class="project-card">
+                    <i class="fab fa-github"></i>
+                    <h4>GitHub Profile</h4>
+                    <p>Explore my open-source contributions</p>
+                </a>
+                <a href="https://github.com/NyamuEd/sovereign-funding" target="_blank" class="project-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Sovereign Funding Repo</h4>
+                    <p>Source code for the prop firm platform</p>
+                </a>
+                <a href="https://github.com/NyamuEd/edgait-mdm" target="_blank" class="project-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Edgait MDM Repo</h4>
+                    <p>MDM customization and development</p>
+                </a>
+                <a href="https://github.com/NyamuEd/kuku-advisor" target="_blank" class="project-card">
+                    <i class="fas fa-brain"></i>
+                    <h4>Kuku Advisor Repo</h4>
+                    <p>AI poultry system development</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="novelist-corner" class="novelist-section glassmorphism">
+            <h3>The Novelist Corner</h3>
+            <p>Beyond technology, I express my creativity through writing. As a published Amazon Kindle author, I've crafted engaging stories that explore human experiences and futuristic themes. My work demonstrates my ability to think narratively and connect with audiences on a deeper level.</p>
+            <a href="https://www.amazon.com/author/edwinnyamu" target="_blank" class="project-link">
+                <i class="fas fa-book"></i> Explore My Books
+            </a>
+        </section>
+
+        <section id="founder-vision" class="vision-section glassmorphism">
+            <h3>The Founder's Vision</h3>
+            <p>My 10-year roadmap is clear: to build proprietary systems that drive innovation and create lasting value. Starting with Edgait Solutions, I'm laying the foundation for a portfolio of interconnected technologies that will empower businesses and individuals alike. The journey to becoming a billionaire isn't just about financial success—it's about creating systems that solve real problems and improve lives.</p>
+            <p>Edgait MDM ensures secure device management, Sovereign Funding democratizes trading opportunities, and Kuku Advisor revolutionizes agriculture. Together, these systems form a comprehensive ecosystem that bridges technology gaps in Kenya and beyond.</p>
+        </section>
     </main>
+
+    <footer class="home-footer glassmorphism">
+        <div class="footer-content">
+            <p>Connect with Edwin Nyamu</p>
+            <div class="social-links">
+                <a href="https://x.com/Nyamu_Ed" target="_blank">
+                    <i class="fab fa-twitter"></i> @Nyamu_Ed
+                </a>
+                <a href="mailto:nyamuedwin85@gmail.com">
+                    <i class="fas fa-envelope"></i> nyamuedwin85@gmail.com
+                </a>
+            </div>
+            <p>&copy; 2026 Edgait Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

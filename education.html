@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education - Edwin Nyamu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="education-page">
     <header>
         <nav>
             <div class="nav-container">
@@ -24,26 +27,115 @@
         </nav>
     </header>
     <main>
-        <section class="glassmorphism">
-            <h1>My Education</h1>
-            <p>I am currently in my 2nd Year, Semester 2 of Software Engineering at Kirinyaga University (KyU). My academic journey is deeply focused on Cybersecurity, where I actively engage in mentorship programs to guide fellow students.</p>
-            <p>Notably, I developed 'Sovereign Funding', a project hosted on Vercel, which demonstrates my practical application of software engineering principles.</p>
-            <div class="education-grid">
-                <div class="card">
-                    <h3>Kirinyaga University</h3>
-                    <p>Software Engineering - Year 2, Sem 2</p>
-                </div>
-                <div class="card">
-                    <h3>Cybersecurity Mentorship</h3>
-                    <p>Leading initiatives to educate peers</p>
-                </div>
-                <div class="card">
-                    <h3>Sovereign Funding</h3>
-                    <p><a href="https://sovereign-funding.vercel.app" target="_blank">View Project</a></p>
+        <section class="education-hero">
+            <div class="hero-content">
+                <h1>Academic Excellence & Mentorship</h1>
+                <h2>Edwin Nyamu</h2>
+                <p class="hero-subtitle">2nd Year Software Engineering Student at Kirinyaga University (KyU)</p>
+                <div class="status-badge">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Currently in Year 2, Semester 2</span>
                 </div>
             </div>
         </section>
+
+        <section class="kyu-experience">
+            <div class="glass-card">
+                <h2><i class="fas fa-university"></i> The KyU Experience</h2>
+                <p>Kirinyaga University has been the perfect environment for my growth as a software engineer. The institution's strong emphasis on innovation and practical application has allowed me to develop both theoretical knowledge and hands-on skills in cutting-edge technologies.</p>
+                <p>The collaborative atmosphere and access to modern facilities have enabled me to explore interdisciplinary approaches, particularly at the intersection of technology and human-centered design.</p>
+            </div>
+        </section>
+
+        <section class="coursework-section">
+            <h2>Key Coursework Highlights</h2>
+            <div class="bento-grid">
+                <div class="bento-card large">
+                    <div class="card-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Human-Centred Interaction</h3>
+                    </div>
+                    <p>This course has taught me the importance of designing technology that serves human needs. I've learned to conduct user research, create intuitive interfaces, and validate designs through iterative testing.</p>
+                    <div class="course-stats">
+                        <span class="stat">Grade: A</span>
+                        <span class="stat">Semester: 2</span>
+                    </div>
+                </div>
+                <div class="bento-card">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cybersecurity Fundamentals</h3>
+                    </div>
+                    <p>Building a strong foundation in cybersecurity principles, including encryption, network security, ethical hacking, and risk assessment. This knowledge forms the basis of my mentorship work.</p>
+                    <div class="course-stats">
+                        <span class="stat">Grade: A-</span>
+                    </div>
+                </div>
+                <div class="bento-card">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Software Engineering</h3>
+                    </div>
+                    <p>Advanced programming concepts, software architecture, and development methodologies that prepare me for real-world software development challenges.</p>
+                    <div class="course-stats">
+                        <span class="stat">Grade: A</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mentorship-section">
+            <div class="glass-card mentorship-card">
+                <h2><i class="fas fa-chalkboard-teacher"></i> Cybersecurity Mentorship</h2>
+                <p>As an experienced developer and trader, I've taken on the role of mentoring new students interested in cybersecurity. My journey from traditional trading to software development gives me unique insights into the intersection of finance, technology, and security.</p>
+                <div class="mentorship-stats">
+                    <div class="counter-item">
+                        <div class="counter" data-target="50">0</div>
+                        <span>Mentees Guided</span>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter" data-target="200">0</div>
+                        <span>Mentorship Hours</span>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter" data-target="15">0</div>
+                        <span>Projects Supervised</span>
+                    </div>
+                </div>
+                <p class="mentorship-focus">I focus on practical skills: teaching ethical hacking techniques, secure coding practices, and real-world cybersecurity applications that prepare students for industry demands.</p>
+            </div>
+        </section>
+
+        <section class="innovation-section">
+            <div class="glass-card">
+                <h2><i class="fas fa-lightbulb"></i> Innovation Spotlight</h2>
+                <div class="project-highlight">
+                    <div class="project-info">
+                        <h3>Mwea Sentry</h3>
+                        <p class="project-tag">AI-Powered Bird Deterrent System</p>
+                        <p>Developed for KyU Innovation Week, Mwea Sentry is an intelligent solution that uses computer vision and machine learning to detect and deter birds from agricultural fields. The system combines IoT sensors, AI algorithms, and automated response mechanisms to protect crops while minimizing environmental impact.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>TensorFlow</span>
+                            <span>Raspberry Pi</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="mwea-sentry.jpg" alt="Mwea Sentry Project">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-home-section">
+            <button class="home-button" onclick="window.location.href='index.html'">
+                <i class="fas fa-home"></i>
+                Back to Home
+            </button>
+        </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
