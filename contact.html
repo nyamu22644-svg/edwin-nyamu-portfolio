@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Edwin Nyamu</title>
+    <title>The Secure Gateway - Edwin Nyamu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-styles.css">
 </head>
-<body>
+<body class="contact-page">
     <header>
         <nav>
             <div class="nav-container">
@@ -18,30 +22,163 @@
                     <li><a href="education.html">Education</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="future.html">Future</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="glassmorphism">
-            <h1>Contact Me</h1>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> Email: nyamuedwin85@gmail.com</p>
-                <p><i class="fab fa-whatsapp"></i> WhatsApp: +254115470750</p>
-                <p><i class="fab fa-twitter"></i> X: <a href="https://x.com/Nyamu_Ed" target="_blank">@Nyamu_Ed</a></p>
+        <section class="gateway-hero">
+            <div class="hero-content">
+                <h1><i class="fas fa-shield-alt"></i> The Secure Gateway</h1>
+                <p class="hero-subtitle">Establishing secure connections in the digital realm</p>
+                <div class="security-status">
+                    <span class="status-indicator online"></span>
+                    <span class="status-text">SYSTEM ONLINE - CONNECTION SECURE</span>
+                </div>
             </div>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        </section>
+
+        <section class="contact-grid">
+            <div class="contact-panel">
+                <div class="panel-header">
+                    <i class="fas fa-terminal"></i>
+                    <span>COMMUNICATION TERMINAL</span>
+                </div>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-button close"></span>
+                            <span class="terminal-button minimize"></span>
+                            <span class="terminal-button maximize"></span>
+                        </div>
+                        <div class="terminal-title">contact@edwin-nyamu.gateway</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-output">
+                            <p><span class="terminal-prompt">$</span> whoami</p>
+                            <p>edwin-nyamu</p>
+                            <p><span class="terminal-prompt">$</span> cat contact_info.txt</p>
+                            <p>Professional Email: nyamuedwin85@gmail.com</p>
+                            <p>Direct Line/WhatsApp: +254115470750</p>
+                            <p>Location: Kutus, Kirinyaga, Kenya</p>
+                            <p>Availability: Mentorship & Edgait Solutions consultations</p>
+                            <p><span class="terminal-prompt">$</span> ls social_links/</p>
+                            <p>twitter/  whatsapp/  github/</p>
+                            <p><span class="terminal-prompt">$</span> ./initiate_contact_protocol</p>
+                        </div>
+                        <form id="terminal-form" class="terminal-form">
+                            <div class="form-group">
+                                <label for="sender-name" class="terminal-label">Sender Name:</label>
+                                <input type="text" id="sender-name" name="sender-name" class="terminal-input" placeholder="Enter your name..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sender-email" class="terminal-label">Sender Email:</label>
+                                <input type="email" id="sender-email" name="sender-email" class="terminal-input" placeholder="Enter your email..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="terminal-label">Message:</label>
+                                <textarea id="message" name="message" class="terminal-textarea" placeholder="Type your message..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="terminal-submit">
+                                <i class="fas fa-paper-plane"></i> TRANSMIT MESSAGE
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="panel-header">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>LOCATION MATRIX</span>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-header">
+                            <i class="fas fa-satellite"></i>
+                            <span>Kirinyaga University Sector</span>
+                        </div>
+                        <div class="map-grid">
+                            <div class="map-marker" style="top: 40%; left: 45%;">
+                                <i class="fas fa-map-pin"></i>
+                                <span class="marker-label">KyU Campus</span>
+                            </div>
+                            <div class="map-marker" style="top: 60%; left: 50%;">
+                                <i class="fas fa-home"></i>
+                                <span class="marker-label">Kutus Base</span>
+                            </div>
+                            <div class="connection-line" style="top: 40%; left: 45%; width: 5%; height: 20%;"></div>
+                        </div>
+                        <div class="map-coordinates">
+                            <span>Coordinates: 0.5042° S, 37.2713° E</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-network-wired"></i>
+                        <span>SOCIAL NETWORKS</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://x.com/Nyamu_Ed" target="_blank" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                            <div class="link-info">
+                                <span class="platform">X (Twitter)</span>
+                                <span class="handle">@Nyamu_Ed</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/254115470750" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <div class="link-info">
+                                <span class="platform">WhatsApp</span>
+                                <span class="handle">+254 115 470 750</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/NyamuEd" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <div class="link-info">
+                                <span class="platform">GitHub</span>
+                                <span class="handle">NyamuEd</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="availability-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-clock"></i>
+                        <span>SYSTEM STATUS</span>
+                    </div>
+                    <div class="status-info">
+                        <div class="status-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Mentorship Hours: Available</span>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Edgait Solutions: Open for Consultations</span>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-globe-africa"></i>
+                            <span>Timezone: EAT (UTC+3)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="security-footer">
+            <div class="encryption-notice">
+                <i class="fas fa-lock"></i>
+                <span>All communications are encrypted and secure</span>
+            </div>
         </section>
     </main>
+
     <script src="script.js"></script>
+    <script src="contact-script.js"></script>
 </body>
 </html>

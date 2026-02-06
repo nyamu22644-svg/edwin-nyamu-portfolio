@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edwin Nyamu - Architecting Systems | Edgait Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index-styles.css">
 </head>
 <body class="home-page">
-    <header id="main-header" class="glass-nav">
+    <header id="main-header" class="secure-nav">
         <nav class="nav-container">
             <div class="logo-section">
                 <h1 class="brand-logo">EDGAIT SOLUTIONS</h1>
-                <span class="tagline">Architecting the Future</span>
+                <span class="tagline">SECURE SYSTEMS ARCHITECTURE</span>
             </div>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -27,20 +30,79 @@
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <section id="hero" class="secure-hero">
             <div class="hero-content">
+                <div class="security-clearance">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>SECURITY CLEARANCE: LEVEL 5</span>
+                </div>
                 <h1 class="hero-title">EDWIN NYAMU</h1>
-                <h2 class="hero-subtitle">ARCHITECTING SYSTEMS</h2>
-                <p class="hero-description">Founder & CEO of Edgait Solutions | 2nd Year Software Engineering Student at Kirinyaga University</p>
-                <div class="hero-image">
-                    <img src="edwin-profile.jpg" alt="Edwin Nyamu - Founder & CEO of Edgait Solutions" class="profile-img">
+                <h2 class="hero-subtitle">SYSTEMS ARCHITECT</h2>
+                <p class="hero-description">Founder & CEO of Edgait Solutions | Kirinyaga University SE Year 2</p>
+                <div class="system-status">
+                    <span class="status-dot online"></span>
+                    <span>ALL SYSTEMS OPERATIONAL</span>
+                </div>
+            </div>
+            <div class="hero-visuals">
+                <div class="hud-frame">
+                    <div class="hud-header">
+                        <div class="hud-status">
+                            <span class="hud-indicator active"></span>
+                            <span class="hud-label">IDENTITY VERIFIED</span>
+                        </div>
+                        <div class="hud-coords">
+                            <span>LAT: 0.5042° N</span>
+                            <span>LONG: 37.2713° E</span>
+                        </div>
+                    </div>
+                    <div class="hud-display">
+                        <img src="edwin-profile.jpg" alt="Edwin Nyamu" class="profile-image">
+                        <div class="hud-overlay">
+                            <div class="scan-line"></div>
+                            <div class="hud-grid"></div>
+                        </div>
+                    </div>
+                    <div class="hud-footer">
+                        <div class="hud-metrics">
+                            <span>TRUST: 100%</span>
+                            <span>ENCRYPTION: ACTIVE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-terminal">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-button close"></span>
+                                <span class="terminal-button minimize"></span>
+                                <span class="terminal-button maximize"></span>
+                            </div>
+                            <div class="terminal-title">edwin-nyamu@edgait:~$</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="terminal-prompt">$</span> whoami</p>
+                            <p>edwin-nyamu</p>
+                            <p><span class="terminal-prompt">$</span> cat /etc/edgait/vision</p>
+                            <p>Architecting secure systems for the digital age</p>
+                            <p>Building fintech, healthtech, and agtech solutions</p>
+                            <p>Empowering Kenya's digital transformation</p>
+                            <p><span class="terminal-prompt">$</span> ls /projects/</p>
+                            <p>edgait-mdm/  sovereign-funding/  hati/  dukabook/  auxeris/</p>
+                            <p><span class="terminal-prompt">$</span> ./status_check</p>
+                            <p><span style="color: #00ff41;">✓ All systems operational</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="founder-statement" class="statement-section glassmorphism">
+        <section id="founder-statement" class="statement-section secure-panel">
+            <div class="panel-header">
+                <i class="fas fa-terminal"></i>
+                <span>FOUNDER'S MANIFEST</span>
+            </div>
             <div class="statement-content">
-                <h3>Founder's Vision</h3>
                 <blockquote class="founder-quote">
                     <em>"I founded Edgait Solutions to bridge the critical gap in Kenyan Fintech and Mobile Device Management. Our mission is to empower businesses and individuals with cutting-edge, secure, and innovative technological solutions that drive growth and efficiency in the digital age."</em>
                 </blockquote>
@@ -49,88 +111,137 @@
         </section>
 
         <section id="ecosystem" class="ecosystem-section">
-            <h3>The Edgait Ecosystem</h3>
-            <div class="ecosystem-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content glassmorphism">
+            <div class="section-header">
+                <h3><i class="fas fa-network-wired"></i> THE EDGAIT ECOSYSTEM</h3>
+                <p>Interconnected secure systems for comprehensive digital solutions</p>
+            </div>
+            <div class="ecosystem-grid">
+                <div class="system-card secure-panel">
+                    <div class="card-header">
+                        <i class="fas fa-mobile-alt"></i>
                         <h4>Edgait MDM</h4>
-                        <p>Advanced Mobile Device Management solution built on Headwind MDM, customized for enterprise-level security and control. I specialize in tailoring these systems to meet specific organizational needs, ensuring seamless device management across diverse environments.</p>
-                        <a href="https://edgaitmdm.tech" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Explore Edgait MDM
-                        </a>
                     </div>
+                    <p>Advanced Mobile Device Management with enterprise-level security. Custom-tailored for organizational needs.</p>
+                    <a href="https://edgaitmdm.tech" target="_blank" class="system-link">
+                        <i class="fas fa-external-link-alt"></i> Access System
+                    </a>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content glassmorphism">
+                <div class="system-card secure-panel">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line"></i>
                         <h4>Sovereign Funding</h4>
-                        <p>A cutting-edge proprietary trading firm platform hosted on Vercel, designed to provide traders with advanced tools and insights. This fintech solution bridges the gap in accessible trading platforms, offering both educational resources and trading opportunities.</p>
-                        <a href="https://sovereign-funding.vercel.app" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Visit Sovereign Funding
-                        </a>
                     </div>
+                    <p>Proprietary trading platform with advanced tools and educational resources for traders.</p>
+                    <a href="https://sovereign-funding.vercel.app" target="_blank" class="system-link">
+                        <i class="fas fa-external-link-alt"></i> Access System
+                    </a>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content glassmorphism">
-                        <h4>Kuku Advisor</h4>
-                        <p>An AI-powered poultry management system that optimizes farm operations through intelligent data analysis. This innovative app helps farmers make informed decisions, predict trends, and maximize productivity in poultry farming.</p>
-                        <div class="coming-soon">Coming Soon</div>
+                <div class="system-card secure-panel">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Hati - Digital Health</h4>
                     </div>
+                    <p>Military-grade encrypted health certificates with AI scribe. Digital title deeds for medical records.</p>
+                    <a href="https://hati-edu.vercel.app" target="_blank" class="system-link">
+                        <i class="fas fa-external-link-alt"></i> Access System
+                    </a>
+                </div>
+                <div class="system-card secure-panel">
+                    <div class="card-header">
+                        <img src="dukabook-logo.jpg" alt="DukaBook Logo" class="project-logo">
+                        <h4>DukaBook - Business Ledger</h4>
+                    </div>
+                    <p>Offline POS system for debt management, inventory control, and mobile business operations.</p>
+                    <a href="https://dukabook.vercel.app" target="_blank" class="system-link">
+                        <i class="fas fa-external-link-alt"></i> Access System
+                    </a>
+                </div>
+                <div class="system-card secure-panel">
+                    <div class="card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h4>Auxeris - Financial Intelligence</h4>
+                    </div>
+                    <p>Phone usage analysis for financial insights, subscription management, and spending optimization.</p>
+                    <div class="coming-soon">SYSTEM INITIALIZING</div>
                 </div>
             </div>
         </section>
 
-        <section id="project-links" class="projects-section glassmorphism">
-            <h3>Project Repositories</h3>
+        <section id="project-links" class="projects-section secure-panel">
+            <div class="panel-header">
+                <i class="fas fa-code"></i>
+                <span>SOURCE CODE REPOSITORIES</span>
+            </div>
             <div class="project-grid">
                 <a href="https://github.com/NyamuEd" target="_blank" class="project-card">
                     <i class="fab fa-github"></i>
                     <h4>GitHub Profile</h4>
-                    <p>Explore my open-source contributions</p>
+                    <p>Open-source contributions</p>
                 </a>
                 <a href="https://github.com/NyamuEd/sovereign-funding" target="_blank" class="project-card">
                     <i class="fas fa-chart-line"></i>
-                    <h4>Sovereign Funding Repo</h4>
-                    <p>Source code for the prop firm platform</p>
+                    <h4>Sovereign Funding</h4>
+                    <p>Prop firm platform source</p>
                 </a>
                 <a href="https://github.com/NyamuEd/edgait-mdm" target="_blank" class="project-card">
                     <i class="fas fa-mobile-alt"></i>
-                    <h4>Edgait MDM Repo</h4>
-                    <p>MDM customization and development</p>
+                    <h4>Edgait MDM</h4>
+                    <p>MDM customization</p>
                 </a>
                 <a href="https://github.com/NyamuEd/kuku-advisor" target="_blank" class="project-card">
                     <i class="fas fa-brain"></i>
-                    <h4>Kuku Advisor Repo</h4>
-                    <p>AI poultry system development</p>
+                    <h4>Kuku Advisor</h4>
+                    <p>AI poultry system</p>
+                </a>
+                <a href="https://github.com/NyamuEd/hati" target="_blank" class="project-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Hati Health</h4>
+                    <p>Encrypted health certificates</p>
+                </a>
+                <a href="https://github.com/NyamuEd/dukabook" target="_blank" class="project-card">
+                    <i class="fas fa-calculator"></i>
+                    <h4>DukaBook</h4>
+                    <p>Offline business ledger</p>
+                </a>
+                <a href="https://github.com/NyamuEd/auxeris" target="_blank" class="project-card">
+                    <i class="fab fa-github"></i>
+                    <h4>Auxeris</h4>
+                    <p>Financial intelligence</p>
                 </a>
             </div>
         </section>
 
-        <section id="novelist-corner" class="novelist-section glassmorphism">
-            <h3>The Novelist Corner</h3>
-            <p>Beyond technology, I express my creativity through writing. As a published Amazon Kindle author, I've crafted engaging stories that explore human experiences and futuristic themes. My work demonstrates my ability to think narratively and connect with audiences on a deeper level.</p>
-            <a href="https://www.amazon.com/author/edwinnyamu" target="_blank" class="project-link">
-                <i class="fas fa-book"></i> Explore My Books
+        <section id="novelist-corner" class="novelist-section secure-panel">
+            <div class="panel-header">
+                <i class="fas fa-book"></i>
+                <span>NARRATIVE SUBSYSTEM</span>
+            </div>
+            <p>Beyond technology, I express creativity through writing. As a published Amazon Kindle author, I've crafted engaging stories exploring human experiences and futuristic themes.</p>
+            <a href="https://www.amazon.com/author/edwinnyamu" target="_blank" class="system-link">
+                <i class="fas fa-book"></i> Access Library
             </a>
         </section>
 
-        <section id="founder-vision" class="vision-section glassmorphism">
-            <h3>The Founder's Vision</h3>
-            <p>My 10-year roadmap is clear: to build proprietary systems that drive innovation and create lasting value. Starting with Edgait Solutions, I'm laying the foundation for a portfolio of interconnected technologies that will empower businesses and individuals alike. The journey to becoming a billionaire isn't just about financial success—it's about creating systems that solve real problems and improve lives.</p>
-            <p>Edgait MDM ensures secure device management, Sovereign Funding democratizes trading opportunities, and Kuku Advisor revolutionizes agriculture. Together, these systems form a comprehensive ecosystem that bridges technology gaps in Kenya and beyond.</p>
+        <section id="founder-vision" class="vision-section secure-panel">
+            <div class="panel-header">
+                <i class="fas fa-eye"></i>
+                <span>10-YEAR ARCHITECTURE ROADMAP</span>
+            </div>
+            <p>My vision: Build proprietary systems driving innovation and value. Edgait Solutions forms the foundation for interconnected technologies empowering businesses and individuals. The path to billionaire status involves solving real problems and improving lives through secure, efficient systems.</p>
         </section>
     </main>
 
-    <footer class="home-footer glassmorphism">
+    <footer class="home-footer secure-panel">
         <div class="footer-content">
-            <p>Connect with Edwin Nyamu</p>
+            <div class="connection-status">
+                <i class="fas fa-wifi"></i>
+                <span>SECURE CONNECTION ESTABLISHED</span>
+            </div>
             <div class="social-links">
-                <a href="https://x.com/Nyamu_Ed" target="_blank">
+                <a href="https://x.com/Nyamu_Ed" target="_blank" class="social-link">
                     <i class="fab fa-twitter"></i> @Nyamu_Ed
                 </a>
-                <a href="mailto:nyamuedwin85@gmail.com">
+                <a href="mailto:nyamuedwin85@gmail.com" class="social-link">
                     <i class="fas fa-envelope"></i> nyamuedwin85@gmail.com
                 </a>
             </div>
@@ -139,5 +250,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="index-script.js"></script>
 </body>
 </html>

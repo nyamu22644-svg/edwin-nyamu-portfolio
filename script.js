@@ -156,3 +156,71 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(mentorshipSection);
     }
 });
+
+// Progress bar animation for skills page
+function animateProgressBars() {
+    const progressBars = document.querySelectorAll('.progress-fill');
+    progressBars.forEach(bar => {
+        const percent = bar.getAttribute('data-percent');
+        bar.style.width = percent + '%';
+    });
+}
+
+// Trigger progress bar animation when technical stack section is in view
+function handleProgressIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateProgressBars();
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+// Initialize animations on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Education page counter animation
+    const mentorshipSection = document.querySelector('.mentorship-section');
+    if (mentorshipSection) {
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5
+        });
+        observer.observe(mentorshipSection);
+    }
+
+    // Skills page progress bar animation
+    const technicalStack = document.querySelector('.technical-stack');
+    if (technicalStack) {
+        const progressObserver = new IntersectionObserver(handleProgressIntersection, {
+            threshold: 0.3
+        });
+        progressObserver.observe(technicalStack);
+    }
+
+    // Skills filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const skillSections = document.querySelectorAll('.skill-section');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            skillSections.forEach(section => {
+                if (filterValue === 'all') {
+                    section.classList.remove('hidden');
+                } else {
+                    const sectionCategory = section.getAttribute('data-category');
+                    if (sectionCategory === filterValue) {
+                        section.classList.remove('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    });
+});

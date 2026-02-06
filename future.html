@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future - Edwin Nyamu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="future-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body class="future-page">
     <header>
         <nav>
             <div class="nav-container">
@@ -24,25 +29,226 @@
         </nav>
     </header>
     <main>
-        <section class="glassmorphism">
-            <h1>My Future Aspirations</h1>
-            <p>My 10-year roadmap is ambitious: to become a billionaire through developing proprietary systems and implementing well-crafted business strategies. This vision drives my current efforts in software engineering and entrepreneurship.</p>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Years 1-3: Foundation</h3>
-                    <p>Complete education, build expertise in cybersecurity and full-stack development.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Years 4-7: Innovation</h3>
-                    <p>Launch Edgait Solutions, develop proprietary systems.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Years 8-10: Scale</h3>
-                    <p>Expand business strategies to achieve billionaire status.</p>
+        <section class="future-hero">
+            <div class="hero-content">
+                <h1>The 10-Year Billionaire Roadmap</h1>
+                <h2>Visionary Tech Founder Journey</h2>
+                <p class="hero-subtitle">From backyard innovations to global enterprise ecosystems</p>
+                <div class="vision-statement">
+                    <i class="fas fa-crown"></i>
+                    <span>Building the future of intelligent systems and sustainable wealth</span>
                 </div>
             </div>
         </section>
+
+        <section class="intelligence-layer">
+            <div class="section-header">
+                <h2><i class="fas fa-brain"></i> The Intelligence Layer</h2>
+                <p>Digital Edwin: AGI-Powered Ecosystem Management</p>
+            </div>
+            <div class="intelligence-card">
+                <div class="agi-visual">
+                    <div class="neural-network">
+                        <div class="node core"></div>
+                        <div class="connections">
+                            <div class="connection"></div>
+                            <div class="connection"></div>
+                            <div class="connection"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="agi-content">
+                    <h3>70B Parameter Uncensored AGI</h3>
+                    <p>Deployed on Digital Ocean infrastructure, Digital Edwin serves as the central intelligence managing the logic, optimization, and strategic decision-making across my entire entrepreneurial ecosystem.</p>
+                    <div class="agi-capabilities">
+                        <div class="capability">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Predictive Analytics</span>
+                        </div>
+                        <div class="capability">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Risk Management</span>
+                        </div>
+                        <div class="capability">
+                            <i class="fas fa-cogs"></i>
+                            <span>Process Automation</span>
+                        </div>
+                        <div class="capability">
+                            <i class="fas fa-users"></i>
+                            <span>Team Coordination</span>
+                        </div>
+                    </div>
+                    <div class="agi-stats">
+                        <div class="stat">
+                            <span class="stat-number">70B</span>
+                            <span class="stat-label">Parameters</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Operation</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Learning Capacity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fintech-pillar">
+            <div class="section-header">
+                <h2><i class="fas fa-money-bill-wave"></i> The Fintech & Retail Pillar</h2>
+                <p>Revolutionizing Financial Services & Commerce</p>
+            </div>
+            <div class="strategic-web">
+                <div class="web-node dukabook">
+                    <div class="node-icon">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                    <h3>DukaBook</h3>
+                    <p>Evolving from mobile POS/ledger to Kenya's premier credit-scoring system for micro-businesses. Leveraging Human-Centred Interaction principles for offline-first UX.</p>
+                    <a href="https://dukabook.vercel.app" target="_blank" class="node-link">dukabook.vercel.app</a>
+                </div>
+                <div class="web-node auxeris">
+                    <div class="node-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Auxeris</h3>
+                    <p>AI-powered financial advisor managing global subscriptions and cashflow for millions. Intelligent automation of financial decision-making.</p>
+                    <div class="node-status">In Development</div>
+                </div>
+                <div class="web-node sovereign">
+                    <div class="node-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Sovereign Funding</h3>
+                    <p>Transitioning from proprietary trading firm to decentralized investment bank. Democratizing access to sophisticated financial instruments.</p>
+                    <a href="https://sovereign-funding.vercel.app" target="_blank" class="node-link">sovereign-funding.vercel.app</a>
+                </div>
+                <div class="web-connections">
+                    <svg class="connections-svg" viewBox="0 0 400 300">
+                        <path d="M100,150 Q200,100 300,150" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.6"/>
+                        <path d="M100,150 Q200,200 300,150" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.6"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="health-pillar">
+            <div class="section-header">
+                <h2><i class="fas fa-shield-alt"></i> The Health & Security Pillar</h2>
+                <p>Military-Grade Health Data Protection</p>
+            </div>
+            <div class="hati-card">
+                <div class="shield-container">
+                    <div class="shield-icon">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="scan-line"></div>
+                    </div>
+                </div>
+                <div class="hati-content">
+                    <h3>Hati: Smart Health Scribe</h3>
+                    <p>Scaling Hati (hati-edu.vercel.app) to provide military-grade encrypted health 'title deeds' for international travelers and patients with critical diseases. Advanced AI integration with cybersecurity expertise.</p>
+                    <div class="security-features">
+                        <div class="feature">
+                            <i class="fas fa-lock"></i>
+                            <span>End-to-End Encryption</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fingerprint"></i>
+                            <span>Biometric Security</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Blockchain Verification</span>
+                        </div>
+                    </div>
+                    <a href="https://hati-edu.vercel.app" target="_blank" class="hati-link">hati-edu.vercel.app</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="agri-pillar">
+            <div class="section-header">
+                <h2><i class="fas fa-seedling"></i> The Agri-Wealth Pillar</h2>
+                <p>AI-Driven Agricultural Industrialization</p>
+            </div>
+            <div class="agri-card">
+                <div class="farm-visual">
+                    <div class="chick-icon">
+                        <i class="fas fa-egg"></i>
+                    </div>
+                    <div class="growth-chart">
+                        <div class="growth-bar" style="height: 20%"></div>
+                        <div class="growth-bar" style="height: 40%"></div>
+                        <div class="growth-bar" style="height: 60%"></div>
+                        <div class="growth-bar" style="height: 80%"></div>
+                        <div class="growth-bar" style="height: 100%"></div>
+                    </div>
+                </div>
+                <div class="agri-content">
+                    <h3>From 100 Chicks to Industrial Scale</h3>
+                    <p>Transforming my poultry venture from 100 improved kienyeji chicks into a fully AI-managed industrial supply chain. Digital Edwin oversees automated feeding, health monitoring, and market optimization.</p>
+                    <div class="agri-metrics">
+                        <div class="metric">
+                            <span class="metric-number">100</span>
+                            <span class="metric-label">Starting Chicks</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">10K+</span>
+                            <span class="metric-label">Projected Scale</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">AI</span>
+                            <span class="metric-label">Managed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="revenue-projection">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-line"></i> Revenue Projection</h2>
+                <p>The Path to Billionaire Status</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="revenueChart"></canvas>
+            </div>
+            <div class="projection-timeline">
+                <div class="timeline-point">
+                    <span class="year">2026</span>
+                    <span class="milestone">Foundation Phase</span>
+                    <span class="revenue">$100K</span>
+                </div>
+                <div class="timeline-point">
+                    <span class="year">2028</span>
+                    <span class="milestone">Growth Phase</span>
+                    <span class="revenue">$5M</span>
+                </div>
+                <div class="timeline-point">
+                    <span class="year">2030</span>
+                    <span class="milestone">Scale Phase</span>
+                    <span class="revenue">$100M</span>
+                </div>
+                <div class="timeline-point">
+                    <span class="year">2036</span>
+                    <span class="milestone">Billionaire Status</span>
+                    <span class="revenue">$1B+</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-home-section">
+            <button class="future-home-button" onclick="window.location.href='index.html'">
+                <i class="fas fa-home"></i>
+                Back to Home
+            </button>
+        </section>
     </main>
+
     <script src="script.js"></script>
+    <script src="future-script.js"></script>
 </body>
 </html>
