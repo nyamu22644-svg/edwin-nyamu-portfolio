@@ -1,43 +1,42 @@
-# Personal Portfolio Website
+# Edwin Nyamu - Cyber-Tech Portfolio
 
-This is a static personal portfolio website built with HTML, CSS, and JavaScript. It showcases a university student's life story across six pages.
+This is the personal portfolio website of Edwin Nyamu, a 2nd Year Software Engineering student at Kirinyaga University (KyU) and CEO & Founder of Edgait Solutions. The site features a "Cyber-Tech Premium" theme with deep charcoals, midnight blues, and vibrant neon accents.
 
 ## Pages
 
-- **Homepage**: Introduction and overview
-- **Childhood**: Memorable childhood experiences
-- **Education**: Academic achievements and activities
-- **Skills & Talents**: Technical skills and hobbies
-- **Future Aspirations**: Career goals and dreams
-- **Contact**: Contact information and a contact form
+- **Home**: Introduction with typewriter effect for name
+- **Childhood**: High jump competitions with twin brother and DIY motor project
+- **Education**: KyU Software Engineering focus on Cybersecurity, Sovereign Funding project
+- **Skills**: Full-stack development, Cybersecurity (Ethical Hacking/AppSec), Novel Writing
+- **Future**: 10-year roadmap to billionaire status through proprietary systems
+- **Contact**: Contact form with validation, email, WhatsApp, X (Twitter)
 
-## How to View
+## Features
 
-Open `index.html` in a web browser to view the website.
-
-## Customization
-
-- Replace placeholder text in HTML files with your personal information.
-- Add actual images by replacing `placeholder.jpg`, `childhood.jpg`, etc.
-- Modify `styles.css` for different styling.
-- Enhance `script.js` for more interactivity.
-
-## Web Hosting and Domain Name
-
-To make your website accessible online:
-
-1. **Domain Name**: Register a unique domain name (e.g., yourname.com) through a registrar like GoDaddy or Namecheap. Choose one that reflects your identity or brand.
-
-2. **Web Hosting**: Sign up for a web hosting service such as:
-   - GitHub Pages (free for static sites)
-   - Netlify
-   - Vercel
-   - Hostinger or Bluehost for paid options
-
-Upload your files to the hosting provider's server. For GitHub Pages, create a repository and enable Pages in settings.
+- Responsive design with mobile-first approach
+- Glassmorphism effects
+- Sticky navigation with hover animations
+- Typewriter animation on homepage
+- Enhanced contact form validation
+- Smooth scrolling navigation
 
 ## Technologies Used
 
 - HTML5
-- CSS3
-- JavaScript (ES6)
+- CSS3 (with CSS Grid and Flexbox)
+- JavaScript (ES6+)
+- FontAwesome icons
+
+## How to View
+
+Open `index.html` in a modern web browser.
+
+## Customization
+
+- Replace placeholder images (profile.jpg, childhood1.jpg, etc.) with actual photos
+- Update contact information if needed
+- Modify colors in :root variables in styles.css
+
+## Web Hosting
+
+Upload to GitHub Pages, Netlify, or Vercel for live hosting. The site is static and ready for deployment.
