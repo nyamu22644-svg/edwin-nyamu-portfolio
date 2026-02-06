@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Personal Portfolio</title>
+    <title>Contact - Edwin Nyamu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="childhood.html">Childhood</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="skills.html">Skills & Talents</a></li>
-                <li><a href="future.html">Future Aspirations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <h1 class="logo">EN</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="childhood.html">Childhood</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="future.html">Future</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="glassmorphism">
             <h1>Contact Me</h1>
-            <p>Email: your.email@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Social Media: <a href="#">LinkedIn</a>, <a href="#">Twitter</a></p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: nyamuedwin85@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: +254115470750</p>
+                <p><i class="fab fa-twitter"></i> X: <a href="https://x.com/Nyamu_Ed" target="_blank">@Nyamu_Ed</a></p>
+            </div>
             <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -32,7 +38,7 @@
                 <input type="email" id="email" name="email" required>
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
